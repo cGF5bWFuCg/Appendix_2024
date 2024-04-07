@@ -41,7 +41,7 @@ The summary of the outputs of the logs used in the research can be seen in this 
     1623096035: Warning: Memory usage is approaching the limit.
     1623096040: Security Alert: Suspicious activity detected from IP 192.168.198.11. High volume of connections and data packets.
 ```
-# syslog
+# /var/log/syslog
 1. Increased System Resource Utilization
 ```bash
 Mar 10 12:34:56 mqtt-server kernel: [12345.678901] Out of memory: Kill process 12345 (mosquitto) score 50 or sacrifice child

@@ -6,7 +6,7 @@ The summary of the outputs of the logs used in the research can be seen in this 
 ```bash
 DEBUG:coap-server [192.168.198.11] - CoAP request: [GET] /large-resource Observe: 0 (Token: 0x12345)
 ```
-too many the same log
+too many the same log<br>
 2. Response Size and Frequency
 ```bash
 DEBUG:coap-server [192.168.191.12] - CoAP response: 2.05 Content (Token: 0x12345, Payload Size: 1024 bytes) Block1: (szx=6/1024, m=1)

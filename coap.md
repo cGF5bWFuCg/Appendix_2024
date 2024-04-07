@@ -91,22 +91,22 @@ Repeated CoAP GET requests detected
 UDP TTL:64 TOS:0x0 ID:54323 IpLen:20 DgmLen:200
 CoAP Type: CON, MID: 24602, Token: 0x1235, GET /block-wise-transfer
 ```
-#
-1. CPU Usage Log Example:
+# CheckMK 
+1. CPU Usage:
 ```bash
 [2023-12-07 12:00:00] CheckMK: High CPU load alert for Host: CoAP-Server
 Service: CPU load
 Status: CRITICAL
 Metrics: CPU load average over last 5 minutes is 98%
 ```
-2. RAM Usage Log Example:
+2. RAM Usage:
 ```bash
 [2023-12-07 12:06:11] CheckMK: High memory usage alert for Host: CoAP-Server
 Service: Memory Usage
 Status: CRITICAL
 Metrics: RAM usage is at 95% of total capacity
 ```
-3. Bandwidth Usage Log Example:
+3. Bandwidth Usage:
 ```bash
 [2023-12-07 12:10:53] CheckMK: High network traffic alert for Host: CoAP-Server
 Service: Network Traffic

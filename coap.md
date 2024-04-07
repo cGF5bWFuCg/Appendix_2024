@@ -65,3 +65,29 @@ type=AVC msg=audit(1670405650.789:12347): avc:  denied  { read } for  pid=3131 c
 13:44:02.456789 IP 192.168.198.11.12347 > 192.168.191.12.5683: UDP, length 15
 13:44:02.567890 IP 192.168.198.11.12348 > 192.168.191.12.5683: UDP, length 15
 ```
+## Snort.log
+1. CoAP Protocol Abuse Alert:
+```bash
+[**] [1:2100018:1] CoAP Amplification Potential Detected [**]
+[Priority: 2] 
+04/07-12:00:01.123456 192.168.198.11:5683 -> 192.168.191.12:5683
+UDP TTL:64 TOS:0x0 ID:54321 IpLen:20 DgmLen:1500
+Len: 1480
+CoAP Type: CON, MID: 24601, Token: 0x1234, GET /large-resource
+```
+2. High Frequency:
+```bash
+[**] [1:2100019:1] CoAP High Request Rate [**]
+[Priority: 1] 
+04/07-12:00:02.234567 192.168.198.11:5683 -> 192.168.191.12:5683
+UDP TTL:64 TOS:0x0 ID:54322 IpLen:20 DgmLen:60
+Repeated CoAP GET requests detected
+```
+3. Suspicious CoAP:
+```bash
+[**] [1:2100020:1] CoAP Large Block Transfer Request [**]
+[Priority: 2] 
+04/07-12:00:03.345678 192.168.198.11:5683 -> 192.168.191.12:5683
+UDP TTL:64 TOS:0x0 ID:54323 IpLen:20 DgmLen:200
+CoAP Type: CON, MID: 24602, Token: 0x1235, GET /block-wise-transfer
+```

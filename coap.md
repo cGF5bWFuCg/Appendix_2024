@@ -37,3 +37,16 @@ Apr 7 14:12:00 coap-server kernel: [ERROR] Memory usage at 90%, possible memory 
 ```bash
 Apr 7 14:14:00 coap-server systemd: [NOTICE] aiocoap-server.service restarted due to unexpected shutdown
 ```
+# /var/log/audit.log
+1. Network Activity:
+```bash
+type=SYSCALL msg=audit(1670405600.123:12345): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=7fffd395a620 a2=10 a3=7fffd395a3f0 items=0 ppid=3126 pid=3130 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="aiocoap-server" exe="/usr/bin/python3.8" subj=system_u:system_r:unconfined_service_t:s0 key=(null)
+```
+2. Authentication Attempt:
+```bash
+type=USER_AUTH msg=audit(1670405620.456:12346): pid=3130 uid=0 auid=1000 ses=1 subj=system_u:system_r:unconfined_service_t:s0 msg='op=PAM:authentication acct="root" exe="/usr/bin/su" hostname=? addr=192.168.198.11 terminal=pts/0 res=failed'
+```
+3. Resource Access:
+```bash
+type=AVC msg=audit(1670405650.789:12347): avc:  denied  { read } for  pid=3131 comm="aiocoap-server" name="sensitive-config.conf" dev="sda1" ino=1234567 scontext=system_u:system_r:unconfined_service_t:s0 tcontext=system_u:object_r:admin_home_t:s0 tclass=file permissive=0
+```

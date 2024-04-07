@@ -24,3 +24,16 @@ WARN:coap-server [2023-12-07T12:00:06Z] [192.168.191.12] - CoAP response: 5.03 S
 ```bash
 ERROR:coap-server - System resource warning: CPU usage at 90%, Memory usage at 80%
 ```
+# /var/log/syslog
+1. High Network Activity Log Entry:
+```bash
+Apr 7 14:11:00 coap-server kernel: [WARN] High TCP traffic volume from 192.168.198.11 to 192.168.191.12 on port 5683
+```
+2. System Resource Alert Log Entry:
+```bash
+Apr 7 14:12:00 coap-server kernel: [ERROR] Memory usage at 90%, possible memory leak detected in process aiocoap-server (pid 12345)
+```
+3. Failures and Restarts Log Entry:
+```bash
+Apr 7 14:14:00 coap-server systemd: [NOTICE] aiocoap-server.service restarted due to unexpected shutdown
+```

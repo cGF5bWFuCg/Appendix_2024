@@ -12,9 +12,9 @@ DEBUG:coap-server [2023-12-07T12:00:04Z] [192.168.198.11] - CoAP request: [GET] 
 DEBUG:coap-server [2023-12-07T12:00:05Z] [192.168.198.11] - CoAP request: [GET] /api/test01 (Token: 0x01b0, MsgID: 4215)
 DEBUG:coap-server [2023-12-07T12:00:06Z] [192.168.198.11] - CoAP request: [GET] /api/test01 (Token: 0x01b1, MsgID: 4216)
 ```
-2. Response Size and Frequency
+2. Response Size
 ```bash
-DEBUG:coap-server [192.168.191.12] - CoAP response: 2.05 Content (Token: 0x12345, Payload Size: 1024 bytes) Block1: (szx=6/1024, m=1)
+DEBUG:coap-server [2023-12-07T14:00:06Z] [192.168.191.12] - CoAP response: 2.05 Content (Token: 0x12345, Payload Size: 1024 bytes) Block1: (szx=6/1024, m=1)
 ```
 3. 
 ```bash

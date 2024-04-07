@@ -73,7 +73,7 @@ type=AVC msg=audit(1670405650.789:12347): avc:  denied  { read } for  pid=3131 c
 12/07-15:37:01.123456 192.168.198.11:5683 -> 192.168.191.12:5683
 UDP TTL:64 TOS:0x0 ID:54321 IpLen:20 DgmLen:1500
 Len: 1480
-CoAP Type: CON, MID: 24601, Token: 0x1234, GET /large-resource
+CoAP Type: CON, MID: 24601, Token: 0x1234, GET /test02
 ```
 2. High Frequency:
 ```bash

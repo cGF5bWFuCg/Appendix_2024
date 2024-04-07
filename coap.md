@@ -70,7 +70,7 @@ type=AVC msg=audit(1670405650.789:12347): avc:  denied  { read } for  pid=3131 c
 ```bash
 [**] [1:2100018:1] CoAP Amplification Potential Detected [**]
 [Priority: 2] 
-04/07-12:00:01.123456 192.168.198.11:5683 -> 192.168.191.12:5683
+12/07-15:37:01.123456 192.168.198.11:5683 -> 192.168.191.12:5683
 UDP TTL:64 TOS:0x0 ID:54321 IpLen:20 DgmLen:1500
 Len: 1480
 CoAP Type: CON, MID: 24601, Token: 0x1234, GET /large-resource
@@ -79,7 +79,7 @@ CoAP Type: CON, MID: 24601, Token: 0x1234, GET /large-resource
 ```bash
 [**] [1:2100019:1] CoAP High Request Rate [**]
 [Priority: 1] 
-04/07-12:00:02.234567 192.168.198.11:5683 -> 192.168.191.12:5683
+12/07-15:37:02.234567 192.168.198.11:5683 -> 192.168.191.12:5683
 UDP TTL:64 TOS:0x0 ID:54322 IpLen:20 DgmLen:60
 Repeated CoAP GET requests detected
 ```
@@ -87,7 +87,7 @@ Repeated CoAP GET requests detected
 ```bash
 [**] [1:2100020:1] CoAP Large Block Transfer Request [**]
 [Priority: 2] 
-04/07-12:00:03.345678 192.168.198.11:5683 -> 192.168.191.12:5683
+12/07-15:37:03.345678 192.168.198.11:5683 -> 192.168.191.12:5683
 UDP TTL:64 TOS:0x0 ID:54323 IpLen:20 DgmLen:200
 CoAP Type: CON, MID: 24602, Token: 0x1235, GET /block-wise-transfer
 ```

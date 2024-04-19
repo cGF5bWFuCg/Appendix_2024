@@ -56,6 +56,11 @@ The summary of the outputs of the logs used in the research can be seen in this 
     1623096035: Warning: Memory usage is approaching the limit.
     1623096040: Security Alert: Suspicious activity detected from IP 192.168.198.11. High volume of connections and data packets.
 ```
+7. Protocol Error
+```bash
+1713516729: New connection from 127.0.0.1:50058 on port 1883.
+1713516729: Client <unknown> disconnected due to protocol error.
+```
 # /var/log/syslog
 1. Increased System Resource Utilization
 ```bash

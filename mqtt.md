@@ -113,6 +113,10 @@ No.     | Time      | Source         | Destination    | Protocol | Length | Info
 ...     | ...       | ...            | ...            | ...      | ...    | ...
 100     | 50.000000 | 192.168.198.11 | 192.168.191.10 | TCP      | 54     | [ACK] Seq=1 Ack=1 Len=0
 ```
+4. UDP Packet
+```bash
+11:33:53.587732 IP 192.168.198.11.50783 > 192.168.198.10.1883: UDP, length 14
+```
 # IDS logs
 1. Excessive TCP Connections Alerts
 ```bash

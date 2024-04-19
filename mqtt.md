@@ -115,7 +115,9 @@ No.     | Time      | Source         | Destination    | Protocol | Length | Info
 ```
 4. UDP Packet
 ```bash
-11:33:53.587732 IP 192.168.198.11.50783 > 192.168.198.10.1883: UDP, length 14
+tcpdump: listening on lo, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+16:23:17.231579 IP (tos 0x0, ttl 64, id 20326, offset 0, flags [DF], proto UDP (17), length 42)
+    192.168.198.11.52370 > 192.168.198.10.1883: UDP, length 14
 ```
 # IDS logs
 1. Excessive TCP Connections Alerts

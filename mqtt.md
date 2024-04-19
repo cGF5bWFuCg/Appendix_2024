@@ -3,12 +3,27 @@ The summary of the outputs of the logs used in the research can be seen in this 
 # mosquitto.log
 1. New Connection From Attacker's IP
 ```bash
-    1614556762: New connection from 192.168.198.11 on port 1883. [Client ID: attacker_client_001]
+1713510949: New connection from 192.168.198.11:60807 on port 1883.
+1713510949: New client connected from 192.168.198.11:60807 as Client_0 (p2, c1, k60).
 ```
 2. Excessive Connection Attempts
 ```bash
-    1614556763: New connection from 192.168.198.11 on port 1883. [Client ID: attacker_client_002]
-    1614556763: New connection from 192.168.198.11 on port 1883. [Client ID: attacker_client_003]
+1713510949: New connection from 192.168.198.11:60807 on port 1883.
+1713510949: New client connected from 192.168.198.11:60807 as Client_0 (p2, c1, k60).
+1713510949: Client Client_0 disconnected.
+1713510949: New connection from 192.168.198.11:56391 on port 1883.
+1713510949: New client connected from 192.168.198.11:56391 as Client_1 (p2, c1, k60).
+1713510949: Client Client_1 disconnected.
+1713510949: New connection from 192.168.198.11:47365 on port 1883.
+1713510949: New client connected from 192.168.198.11:47365 as Client_2 (p2, c1, k60).
+1713510949: Client Client_2 disconnected.
+1713510949: New connection from 192.168.198.11:53179 on port 1883.
+1713510949: New client connected from 192.168.198.11:53179 as Client_3 (p2, c1, k60).
+1713510949: Client Client_3 disconnected.
+1713510949: New connection from 192.168.198.11:60291 on port 1883.
+1713510949: New client connected from 192.168.198.11:60291 as Client_4 (p2, c1, k60).
+1713510949: Client Client_4 disconnected.
+
 ```
 3. Connections Not Completing MQTT Handshake
 ```bash
